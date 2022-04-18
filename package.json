@@ -1,0 +1,25 @@
+{
+  "name": "restaurant-website",
+  "version": "1.0.0",
+  "description": "This is a website for a local bar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --progress --mode=production",
+    "watch": "webpack --progress --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MeischkeM91/restaurant-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MeischkeM91/restaurant-website/issues"
+  },
+  "homepage": "https://github.com/MeischkeM91/restaurant-website#readme",
+  "devDependencies": {
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2"
+  }
+}

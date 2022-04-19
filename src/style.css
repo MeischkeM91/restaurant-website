@@ -1,3 +1,117 @@
 * {
-    color: red;
+    margin: 0;
+    padding: 0;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+:root{
+    --soft-black:rgb(32, 32, 32);
+}
+#wrapper{
+    background-image: url('/src/bar-bg.jpeg');
+    background-size: cover;
+    width: 100vw;
+    height: auto;
+    display: grid;
+    grid-template-areas: 
+    'logo navbar'
+    'pageContent pageContent';
+    grid-template-columns: 60% 1fr;
+    grid-template-rows: auto 1fr;
+    
+}
+/* Header Content */
+.logo{
+    grid-area: logo;
+    font-size: 3.3rem;
+    font-weight: 600;
+    padding-left: 25px;
+    background-color: white;
+    border-bottom: 1px solid black;
+}
+.navbar{
+    grid-area: navbar;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.navlink{
+    font-size: 1.6rem;
+    background-color: white;
+    padding-top: 20px;
+    text-align: center;
+    color: black;
+    border-bottom: 1px solid black;
+}
+.navlink:hover{
+    background-color: rgba(255, 255, 255, 0.418);
+}
+.navlink.active{
+    background-color: rgba(255, 255, 255, 0.418);
+    color: black;
+    font-size: 1.7rem;
+    border-bottom: none;
+    -webkit-text-stroke: 1px white;
+}
+.navlink.contact-link{
+    padding-right: 20px;
+}
+/* End Header Content */
+/* Main Content  */
+.page-content{
+    grid-area: pageContent;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    justify-items: center;
+    background-color: white;
+    width: 80vw;
+    margin: 3% auto;
+    padding-top: 10px;
+    border: 3px solid var(--soft-black);
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px black;
+}
+/* Hero */
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    border-radius: 15px;
+}
+.hero p{
+    width: 50%;
+    text-align: end;
+    padding-right: 20px;
+}
+.hero img{
+    width: 25vw;
+    height: auto;
+    border: 2px solid #6B4B4B;
+    border-radius: 50%;
+}
+.about-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    background-color: lightgray;
+    margin: 20px 0px 0px;
+    padding: 30px 30px;
+}
+.location{
+    position:initial;
+    display: flex;
+    background-color:  #6B4B4B;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+.location iframe{
+    height: 300px;
+    border: 1px solid var(--soft-black);
+    margin-left: 10px;
 }

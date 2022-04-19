@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: var(--caveat-font);
 }
 :root{
     --soft-black:rgb(32, 32, 32);
+    --logo-font: 'Anton', sans-serif;
+    --caveat-font: 'Caveat', cursive;;
 }
 #wrapper{
     background-image: url('/src/bar-bg.jpeg');
@@ -17,12 +22,12 @@
     'pageContent pageContent';
     grid-template-columns: 60% 1fr;
     grid-template-rows: auto 1fr;
-    
 }
 /* Header Content */
 .logo{
     grid-area: logo;
-    font-size: 3.3rem;
+    font-size: 3rem;
+    font-family: var(--logo-font);
     font-weight: 600;
     padding-left: 25px;
     background-color: white;
@@ -32,6 +37,7 @@
     grid-area: navbar;
     display:grid;
     grid-template-columns: repeat(3, 1fr);
+
 }
 .navlink{
     font-size: 1.6rem;
@@ -40,6 +46,7 @@
     text-align: center;
     color: black;
     border-bottom: 1px solid black;
+    font-family: var(--logo-font);
 }
 .navlink:hover{
     background-color: rgba(255, 255, 255, 0.418);
@@ -47,7 +54,7 @@
 .navlink.active{
     background-color: rgba(255, 255, 255, 0.418);
     color: black;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     border-bottom: none;
     -webkit-text-stroke: 1px white;
 }
@@ -78,6 +85,9 @@
     width: 100%;
     margin: auto;
     border-radius: 15px;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: .9;
 }
 .hero p{
     width: 50%;
@@ -100,6 +110,13 @@
     background-color: lightgray;
     margin: 20px 0px 0px;
     padding: 30px 30px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1;
+}
+.about-us h1{
+    font-size: 4rem;
+    font-weight: 700;
 }
 .location{
     position:initial;

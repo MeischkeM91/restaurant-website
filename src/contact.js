@@ -1,5 +1,6 @@
 import './style.css';
 import loadHome from './home';
+import loadMenu from './menu';
 
 const createContact = () =>{
     const pageWrapper = document.querySelector('#wrapper');
@@ -24,6 +25,9 @@ const createContact = () =>{
     const menuLink = document.createElement('div');
     menuLink.classList.add('navlink','menu-link');
     menuLink.innerText = 'Menu';
+    menuLink.addEventListener('click', () =>{
+        loadMenu();
+    });
     const contactLink = document.createElement('div');
     contactLink.classList.add('navlink','contact-link','active');
     contactLink.innerText = 'Contact';

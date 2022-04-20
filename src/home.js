@@ -1,6 +1,7 @@
 import './style.css';
 import Bartender from './bartender.jpeg';
 import loadContact from './contact';
+import loadMenu from './menu';
 
 const createHome = () =>{
     const pageWrapper = document.querySelector('#wrapper');
@@ -26,6 +27,9 @@ const createHome = () =>{
     const menuLink = document.createElement('div');
     menuLink.classList.add('navlink','menu-link');
     menuLink.innerText = 'Menu';
+    menuLink.addEventListener('click', () =>{
+        loadMenu();
+    });
     const contactLink = document.createElement('div');
     contactLink.classList.add('navlink','contact-link');
     contactLink.innerText = 'Contact';

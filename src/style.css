@@ -150,13 +150,54 @@ CONTACT PAGE CONTENT
     background-color: white;
     width: 80vw;
     margin: 3% auto;
-    padding: 10px 0px;
+    padding: 0px 0px 10px;
     border: 3px solid var(--soft-black);
     border-radius: 10px;
     box-shadow: 1px 1px 3px black;
 }
+/* Details Container */
+.gen-details{
+    background-color: var(--soft-black);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    'addressDets mapDets'
+    'hoursDets mapDets'
+    'hoursDets mapDets';
+    width: 100%;
+    min-height: 400px;
+}
+.address-details{
+    grid-area: addressDets;
+    justify-self: center;
+    align-self: center;
+    color: white;
+}
+.hours-details, .hours{
+    grid-area: hoursDets;
+    justify-self: center;
+    align-self: start;
+    text-align: center;
+    color: white;
+}
+.hours{
+    font-size: 1.5rem;
+    border-bottom: 2px solid white;
+    margin-bottom: 10px;
+}
+.map-details{
+    grid-area: mapDets;
+    align-self: center;
+    width: 95%;
+    height: 80%;
+    border: none;
+}
+/* Contact Form */
 .contact-page-content form{
     width: 90%;
+    max-width: 600px;
+    margin: 10px 0px;
 }
 .contact-page-content form fieldset{
     padding: 10px;
@@ -168,7 +209,7 @@ CONTACT PAGE CONTENT
 }
 .subBtn{
     background-color: white;
-    border: 2px solid black;
+    border: 2px solid var(--soft-black);
     border-radius: 7px;
     padding: 5px 10px;
 }

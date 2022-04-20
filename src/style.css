@@ -219,3 +219,60 @@ CONTACT PAGE CONTENT
 .subBtn:active{
     transform: scale(.95);
 }
+/****************
+MENU PAGE CONTENT  
+*****************/
+.menu-page-content{
+    grid-area: pageContent;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 80vw;
+    margin: 3% auto;
+    padding: 0px 0px 10px;
+    border: 3px solid var(--soft-black);
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px black;
+}
+.menu-header{
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 15px 0px 0px;
+}
+.app-container, .drinks-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.2;
+    text-align: center;
+    padding: 5px 20px;
+}
+.app-header, .drinks-header{
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin: 5% 0px;
+}
+.item-name{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.item-desc{
+    font-style: italic;
+    margin-bottom: 5px;
+}
+.drinks-list{
+    display: flex;
+}
+.cocktail-header, .beer-header{
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+.cocktail-div{
+    border-right: 1px solid var(--soft-black);
+}
+.cocktail-div, .beer-div{
+    padding: 5px;
+}

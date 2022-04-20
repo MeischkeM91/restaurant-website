@@ -6,6 +6,7 @@
     padding: 0;
     font-family: var(--oswald-font);
 }
+
 body{
     height: 100%;
     background-image: url('/src/bar-bg.jpeg');
@@ -17,7 +18,6 @@ body{
     --oswald-font:'Oswald', sans-serif;
 }
 #wrapper{
-
     width: 100vw;
     height: auto;
     display: grid;
@@ -44,9 +44,9 @@ body{
 
 }
 .navlink{
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     background-color: white;
-    padding-top: 20px;
+    padding: 20px 5px 0px 5px;
     text-align: center;
     color: black;
     border-bottom: 1px solid black;
@@ -150,8 +150,31 @@ CONTACT PAGE CONTENT
     background-color: white;
     width: 80vw;
     margin: 3% auto;
-    padding-top: 10px;
+    padding: 10px 0px;
     border: 3px solid var(--soft-black);
     border-radius: 10px;
     box-shadow: 1px 1px 3px black;
+}
+.contact-page-content form{
+    width: 90%;
+}
+.contact-page-content form fieldset{
+    padding: 10px;
+}
+.contactDetails{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 7px;
+}
+.subBtn{
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 7px;
+    padding: 5px 10px;
+}
+.subBtn:hover{
+    background-color: whitesmoke;
+}
+.subBtn:active{
+    transform: scale(.95);
 }

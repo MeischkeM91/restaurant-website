@@ -85,6 +85,13 @@ const createContact = () =>{
     subBtn.type='button';
     subBtn.classList.add('subBtn');
     subBtn.innerText = 'Submit';
+    subBtn.addEventListener('click', () =>{
+        nameField.value='';
+        phoneField.value='';
+        emailField.value='';
+        textareaField.value='';
+        alert('Thank you for submitting your feedback!');
+    });
 
     //Create form
     pageContent.appendChild(contactForm);

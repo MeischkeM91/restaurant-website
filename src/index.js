@@ -1,3 +1,4 @@
 import loadHome from './home';
 
-loadHome();
+
+document.onload = loadHome();

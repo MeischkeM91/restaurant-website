@@ -1,5 +1,6 @@
 import './style.css';
 import Bartender from './bartender.jpeg';
+import loadContact from './contact';
 
 const createHome = () =>{
     const pageWrapper = document.querySelector('#wrapper');
@@ -17,13 +18,21 @@ const createHome = () =>{
     // Navbar links
     const homeLink = document.createElement('div');
     homeLink.classList.add('navlink','home-link','active');
-    homeLink.innerText = 'Home'
+    homeLink.innerText = 'Home';
+    homeLink.addEventListener('click', () =>{
+        loadHome();
+        console.log('clicked')
+    });
     const menuLink = document.createElement('div');
     menuLink.classList.add('navlink','menu-link');
-    menuLink.innerText = 'Menu'
+    menuLink.innerText = 'Menu';
     const contactLink = document.createElement('div');
     contactLink.classList.add('navlink','contact-link');
-    contactLink.innerText = 'Contact'
+    contactLink.innerText = 'Contact';
+    contactLink.addEventListener('click', () =>{
+        loadContact();
+        console.log('clicked')
+    });
     // Add top bar to page
     pageWrapper.appendChild(pageLogo);
     pageWrapper.appendChild(navbar);

@@ -3,6 +3,7 @@ import Bartender from './bartender.jpeg';
 
 const createHome = () =>{
     const pageWrapper = document.querySelector('#wrapper');
+    pageWrapper.innerHTML = '';
     /************ 
         TOPBAR
     ************/

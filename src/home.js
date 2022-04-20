@@ -44,7 +44,7 @@ const createHome = () =>{
     ************/
     // page content wrapper
     const pageContent = document.createElement('div');
-    pageContent.classList.add('page-content');
+    pageContent.classList.add('home-page-content');
     pageWrapper.appendChild(pageContent);
     // **** HERO ****
     // Hero div

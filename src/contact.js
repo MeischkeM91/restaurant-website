@@ -43,7 +43,7 @@ const createContact = () =>{
     ************/
     // page content wrapper
     const pageContent = document.createElement('div');
-    pageContent.classList.add('page-content');
+    pageContent.classList.add('contact-page-content');
     pageWrapper.appendChild(pageContent);
 
     // Contact Form
